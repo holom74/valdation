@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <link rel="stylesheet" href="./main.css">
+  <title>valdation</title>
+</head>
+<body>
+  <div class="container my-5 bg-dark">
+    <div class="row w-50 m-auto pt-5">
+      <div >
+        <h1 class="text-center text-info  mb-3">Registration</h1>
+      </div>
+      <label for="UserName"></label>
+      <input type="text" oninput="uservali()"  id="UserName" placeholder="enter your name" class=" form-control mb-3">
+      <h6 class="text-danger" id="usernamevlidat"></h6>
+      <label for="Email"></label>
+      <input type="email" oninput="emailvali()" id="Email" placeholder="enter your mail" class=" form-control mb-3">
+      <h6 class="text-danger" id="emailvlidat"></h6>
+      <label for="password"></label>
+      <input type="password" oninput="passvali()"  id="password" placeholder="enter your password" class=" form-control mb-3">
+      <h6 class="text-danger" id="passvlidat"></h6>
+      <button class="btn btn-outline-info mb-3" onclick="sign_up()" >sign up</button>
+      <h6 class="text-center text-danger mb-3" id="signvalidat"></h6>
+      <h6 class="text-center text-white-50 mb-3">
+        you have an acount ?
+        <button class="btn btn-outline-info">sign in </button>
+      </h6>
+    </div>
+  </div>
+
+
+
+  <script src="./valdation.js"></script>
+</body>
+</html>
